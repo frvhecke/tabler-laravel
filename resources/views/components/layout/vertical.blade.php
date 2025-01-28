@@ -31,6 +31,7 @@
     </style>
   </head>
   <body >
+    <script src="/js/demo-theme.min.js?1692870487"></script>
     <div class="page">
       <!-- Sidebar -->
       <aside class="navbar navbar-vertical navbar-expand-lg" data-bs-theme="dark">
@@ -182,5 +183,9 @@
         {{ $slot }}
       </div>
     </div>
+    <!-- Tabler Core -->
+    <!-- Libs JS -->
+    <script src="/js/tabler.min.js?1692870487" defer=""></script>
+    <script src="/js/demo.min.js?1692870487" defer=""></script>
   </body>
 </html>
