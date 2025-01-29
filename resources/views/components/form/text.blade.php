@@ -1,0 +1,1 @@
+<input type="text" class="form-control" @if(!empty($name)) name="{{ $name }}" @endif @if(!empty($placeholder)) placeholder="{{ $placeholder }}" @endif @if(!empty($value)) value="{{ $value }}" @endif @if($disabled) disabled @endif @if($readonly) readonly @endif />
