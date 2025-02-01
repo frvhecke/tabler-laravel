@@ -18,6 +18,9 @@ class checkbox extends Component
     // Text for the checkbox
     public $text;
 
+    // Optional description for the checkbox
+    public $description;
+
     // Value for the checkbox
     public $value;
 
@@ -38,10 +41,11 @@ class checkbox extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($name = "", $text = "", $value = "", $selected = false, $disabled = false, $inline = false)
+    public function __construct($name = "", $text = "", $description = "", $value = "", $selected = false, $disabled = false, $inline = false)
     {
         $this->name = $name;
         $this->text = $text;
+        $this->description = $description;
         $this->value = $value;
         $this->selected = $selected;
         $this->disabled = $disabled;
