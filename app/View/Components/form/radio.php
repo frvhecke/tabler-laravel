@@ -18,6 +18,9 @@ class radio extends Component
     // Text for the radio button
     public $text;
 
+    // Optional description for the radio button
+    public $description;
+
     // Value for the radio button
     public $value;
 
@@ -38,10 +41,11 @@ class radio extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($name = "", $text = "", $value = "", $selected = false, $disabled = false, $inline = false)
+    public function __construct($name = "", $text = "", $description = "", $value = "", $selected = false, $disabled = false, $inline = false)
     {
         $this->name = $name;
         $this->text = $text;
+        $this->description = $description;
         $this->value = $value;
         $this->selected = $selected;
         $this->disabled = $disabled;
