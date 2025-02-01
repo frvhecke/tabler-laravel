@@ -30,6 +30,9 @@ class textarea extends Component
     // Flag indicating whether textarea is read-only
     public $readonly;
 
+    // Flag indicating whether textarea should autosize
+    public $autosize;
+
 
     //
     // CONSTRUCTORS
@@ -38,7 +41,7 @@ class textarea extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($name = "", $rows = 5, $placeholder = "", $value = "", $disabled = false, $readonly = false)
+    public function __construct($name = "", $rows = 5, $placeholder = "", $value = "", $disabled = false, $readonly = false, $autosize = false)
     {
         $this->name = $name;
         $this->rows = $rows;
@@ -46,6 +49,7 @@ class textarea extends Component
         $this->value = $value;
         $this->disabled = $disabled;
         $this->readonly = $readonly;
+        $this->autosize = $autosize;
     }
 
 
