@@ -27,6 +27,9 @@ class text extends Component
     // Flag indicating whether field is read-only
     public $readonly;
 
+    // Mask for the text field
+    public $mask;
+
     //
     // CONSTRUCTORS
     //
@@ -34,13 +37,14 @@ class text extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($name = "", $placeholder = "", $value = "", $disabled = false, $readonly = false)
+    public function __construct($name = "", $placeholder = "", $value = "", $disabled = false, $readonly = false, $mask = "")
     {
         $this->name = $name;
         $this->placeholder = $placeholder;
         $this->value = $value;
         $this->disabled = $disabled;
         $this->readonly = $readonly;
+        $this->mask = $mask;
     }
 
 
