@@ -30,6 +30,10 @@ class text extends Component
     // Mask for the text field
     public $mask;
 
+    // Flag indicating whether style is rounded
+    public $rounded;
+
+
     //
     // CONSTRUCTORS
     //
@@ -37,7 +41,7 @@ class text extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($name = "", $placeholder = "", $value = "", $disabled = false, $readonly = false, $mask = "")
+    public function __construct($name = "", $placeholder = "", $value = "", $disabled = false, $readonly = false, $mask = "", $rounded = false)
     {
         $this->name = $name;
         $this->placeholder = $placeholder;
@@ -45,6 +49,7 @@ class text extends Component
         $this->disabled = $disabled;
         $this->readonly = $readonly;
         $this->mask = $mask;
+        $this->rounded = $rounded;
     }
 
 
