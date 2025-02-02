@@ -1,24 +1,28 @@
+@props([
+  'title' => '',          // Title for the page
+  'pretitle' => ''        // Pretitle for the page
+])
 @if($title != '' || $pretitle != '' || $slot->isNotEmpty())
 <div class="page-header d-print-none">
   <div class="container-xl">
     <div class="row g-2 align-items-center">
       <div class="col">
-@if($pretitle != '')
+        @if($pretitle != '')
         <div class="page-pretitle">
           {{ $pretitle }}
         </div>
-@endif
-@if($title != '')
+        @endif
+        @if($title != '')
         <h2 class="page-title">
           {{ $title }}
         </h2>
-@endif
+        @endif
       </div>
-@if($slot->isNotEmpty())
+      @if($slot->isNotEmpty())
       <div class="col-auto ms-auto d-print-none">
         {{ $slot }}
       </div>
-@endif
+      @endif
     </div>
   </div>
 </div>

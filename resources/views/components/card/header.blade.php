@@ -1,3 +1,7 @@
+@props([
+    'title',       // Title for the card header
+    'icon',        // Optional icon for the card header
+])
 <div class="card-header">
 @if($title != "" || $icon != "")
     <h3 class="card-title">

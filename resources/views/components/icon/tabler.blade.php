@@ -1,1 +1,5 @@
-<i {{ $attributes->merge(['class' => 'ti ti-'.$icon]) }}></i>
+@props([
+  'icon',         // Name of the tabler icon
+  'color' => ''   // Color for the icon
+])
+<i @class(['ti', 'ti-'.$icon => !empty($icon), 'text-'.$color => !empty($color)])></i>
