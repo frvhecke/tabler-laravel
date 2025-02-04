@@ -6,14 +6,15 @@
   'fullwidth' => false,   // Full width state of the button
   'active' => false,      // Active state of the button
   'disabled' => false,    // Disabled state of the button
-  'arialabel' => ''       // Aria label for the button
+  'arialabel' => '',      // Aria label for the button
+  'icononly' => false,    // Icon only button styling
 ])
 @if($type =='link')
-<a href="{{ $href }}" target="{{ $target }}" @class(['btn', 'btn-ghost-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled]) @if(!empty($arialable)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
+<a href="{{ $href }}" target="{{ $target }}" @class(['btn', 'btn-ghost-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) @if(!empty($arialable)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
     {{ $slot }}
 </a>
 @else
-<button type="submit" @class(['btn', 'btn-ghost-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled]) @if(!empty($arialable)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
+<button type="submit" @class(['btn', 'btn-ghost-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) @if(!empty($arialable)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
     {{ $slot }}
 </button>
 @endif
