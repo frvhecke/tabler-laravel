@@ -14,7 +14,7 @@
     {{ $slot }}
 </a>
 @else
-<button type="submit" @class(['btn', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled]) @if(!empty($arialable, 'btn-icon' => $icononly)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
+<button type="submit" @class(['btn', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) @if(!empty($arialable)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
     {{ $slot }}
 </button>
 @endif
