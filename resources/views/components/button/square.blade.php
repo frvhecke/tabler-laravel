@@ -10,11 +10,11 @@
   'icononly' => false,    // Icon only button styling
 ])
 @if($type =='link')
-<a href="{{ $href }}" target="{{ $target }}" @class(['btn btn-square', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $icononly, 'btn-icon' => $icon]) @if(!empty($arialable)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
+<a href="{{ $href }}" target="{{ $target }}" @class(['btn btn-square', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $icononly, 'btn-icon' => $icononly]) @if(!empty($arialabel)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
     {{ $slot }}
 </a>
 @else
-<button type="submit" @class(['btn btn-square', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) @if(!empty($arialable)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
+<button type="submit" @class(['btn btn-square', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) @if(!empty($arialabel)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
     {{ $slot }}
 </button>
 @endif
