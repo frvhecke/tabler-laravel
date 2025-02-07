@@ -1,29 +1,17 @@
 @props([
-  'title' => '',          // Title for the page
-  'pretitle' => ''        // Pretitle for the page
+  'actions' => '',      // Slot for page actions slot
 ])
-@if($title != '' || $pretitle != '' || $slot->isNotEmpty())
-<div class="page-header d-print-none">
+<div @class(["page-header", "d-print-none", $attributes["class"]])>
   <div class="container-xl">
     <div class="row g-2 align-items-center">
       <div class="col">
-        @if($pretitle != '')
-        <div class="page-pretitle">
-          {{ $pretitle }}
-        </div>
-        @endif
-        @if($title != '')
-        <h2 class="page-title">
-          {{ $title }}
-        </h2>
-        @endif
-      </div>
-      @if($slot->isNotEmpty())
-      <div class="col-auto ms-auto d-print-none">
         {{ $slot }}
+      </div>
+      @if(!empty(stripslashes($actions)))
+      <div class="col-auto ms-auto d-print-none">
+        {{ $actions }}
       </div>
       @endif
     </div>
   </div>
 </div>
-@endif
