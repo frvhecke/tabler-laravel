@@ -2,7 +2,7 @@
     'title',       // Title for the card header
     'icon',        // Optional icon for the card header
 ])
-<div class="card-header">
+<div @class(["card-header", $attributes["class"]])>
 @if($title != "" || $icon != "")
     <h3 class="card-title">
 @if(isset($icon) && $icon != "")

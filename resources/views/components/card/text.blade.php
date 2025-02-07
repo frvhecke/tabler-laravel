@@ -1,3 +1,3 @@
-<p class="text-secondary">
+<p @class(["text-secondary", $attributes["class"]])>
   {{ $slot }}
 </p>
