@@ -1,0 +1,1 @@
+<span @class(["avatar", "me-2", $attributes["class"]])>{{ $slot }}</span>
