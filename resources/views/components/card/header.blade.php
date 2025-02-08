@@ -1,17 +1,13 @@
 @props([
-    'title',       // Title for the card header
-    'icon',        // Optional icon for the card header
+  'actions' => "",      // Content for actions slot
 ])
 <div @class(["card-header", $attributes["class"]])>
-@if($title != "" || $icon != "")
-    <h3 class="card-title">
-@if(isset($icon) && $icon != "")
-        <x-icon.tabler icon="{{ $icon }}" style="font-size: 14pt; margin-right: 5px;"/>
-@endif
-        {{ $title }}
-    </h3>
-@endif
-@if($slot->isNotEmpty())
-    <div class="card-actions">{{ $slot }}</div>
-@endif
+  @if(!empty(stripslashes($slot)))
+  <h3 class="card-title">
+    {{ $slot }}
+  </h3>
+  @endif
+  @if(!empty(stripslashes($actions)))
+  <div class="card-actions">{{ $actions }}</div>
+  @endif
 </div>
