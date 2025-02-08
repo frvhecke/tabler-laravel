@@ -1,0 +1,1 @@
+<th @class([$attributes["class"]])>{{ $slot }}</th>
