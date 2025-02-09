@@ -4,7 +4,7 @@
   'vcenter' => true,        // Vertically center the table rows
   'striped' => false,       // Striped rows
 ])
-<div @class(['table-responsive' => $responsive])>
+<div @class(['table-responsive' => $responsive]) style="overflow: visible;">
   <table @class(['table', 'table-vcenter' => $vcenter, 'card-table' => $card, 'table-striped' => $striped])>
     @if(!empty(stripslashes($header)))
     <thead>
