@@ -6,7 +6,7 @@
   'last' => false,
   'show' => 5
 ])
-<ul class="pagination" style="margin-bottom:0">
+<ul class="pagination m-0 ms-auto">
   @if($last)
   <li @class(["page-item", "disabled" => ($page==1)])>
     <a class="page-link" href="#" aria-disabled="true">
