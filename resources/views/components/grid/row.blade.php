@@ -3,6 +3,6 @@
   'gutter' => -1,         // Gutter size
   'center' => false,      // Flag indicating whether to align items center
 ])
-<div @class(['row', 'row-cards' => $cards, 'align-items-center' => $center, 'g-'.$gutter => $gutter != -1]) }}>
+<div @class(['row', 'row-cards' => $cards, 'align-items-center' => $center, 'g-'.$gutter => $gutter != -1, $attributes["class"]]) }}>
   {{ $slot }}
 </div>
