@@ -1,1 +1,1 @@
-<div class="spinner-border spinner-border-sm text-secondary" role="status"></div>
+<div {{ $attributes->class([ 'spinner-border spinner-border-sm text-secondary' ]) }} role="status"></div>
