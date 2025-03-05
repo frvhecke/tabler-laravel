@@ -14,11 +14,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title></title>
     <!-- CSS files -->
-    <link href="/css/tabler.min.css?1692870487" rel="stylesheet"/>
     <link href="/css/tabler-flags.min.css?1692870487" rel="stylesheet"/>
     <link href="/css/tabler-payments.min.css?1692870487" rel="stylesheet"/>
     <link href="/css/tabler-vendors.min.css?1692870487" rel="stylesheet"/>
     <link href="/css/demo.min.css?1692870487" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <style>
       @import url('https://rsms.me/inter/inter.css');
@@ -185,7 +185,7 @@
     </div>
     <!-- Tabler Core -->
     <!-- Libs JS -->
-    <script src="/js/tabler.min.js?1692870487" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
     <script src="/js/demo.min.js?1692870487" defer=""></script>
   </body>
 </html>
