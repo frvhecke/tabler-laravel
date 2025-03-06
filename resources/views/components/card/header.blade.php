@@ -1,7 +1,7 @@
 @props([
   'actions' => "",      // Content for actions slot
 ])
-<div @class(["card-header", $attributes["class"]])>
+<div {{ $attributes->class(["card-header", $attributes["class"]]) }}>
   @if(!empty(stripslashes($slot)))
   <h3 class="card-title">
     {{ $slot }}
