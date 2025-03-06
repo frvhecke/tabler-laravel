@@ -14,7 +14,7 @@
     {{ $slot }}
 </a>
 @else
-<button :type="$type" {{ $attributes->class(['btn', 'btn-ghost-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) }}>
+<button {{ $attributes->class(['btn', 'btn-ghost-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly])->merge([ "type" => $type ]) }}>
     {{ $slot }}
 </button>
 @endif
