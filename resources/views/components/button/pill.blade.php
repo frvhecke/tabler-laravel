@@ -9,7 +9,7 @@
   'arialabel' => '',      // Aria label for the button
   'icononly' => false,    // Icon only button styling
 ])
-@if($type =='link')
+@if($type == 'link')
 <a href="{{ $href }}" target="{{ $target }}" {{ $attributes->class(['btn btn-pill', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) }}>
     {{ $slot }}
 </a>
