@@ -1,0 +1,1 @@
+<h5 {{ $attributes->class([ 'modal-title' ]) }}>{{ $slot }}</h5>
