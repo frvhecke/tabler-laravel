@@ -1,5 +1,5 @@
 @props([
-  'type' => 'button',     // Type of the button ('button' or 'link')
+  'type' => 'button',     // Type of the button ('button', 'submit' or 'link')
   'href' => '#',          // Destination for the link
   'target' => '_self',    // Target for the link
   'color' => '',          // Color for the button
@@ -14,7 +14,7 @@
     {{ $slot }}
 </a>
 @else
-<button type="submit" {{ $attributes->class(['btn', 'btn-outline-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) }}>
+<button :type="$type" {{ $attributes->class(['btn', 'btn-outline-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) }}>
     {{ $slot }}
 </button>
 @endif
