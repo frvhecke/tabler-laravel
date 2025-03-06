@@ -10,11 +10,11 @@
   'icononly' => false,    // Icon only button styling
 ])
 @if($type =='link')
-<a href="{{ $href }}" target="{{ $target }}" @class(['btn btn-pill', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) @if(!empty($arialabel)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
+<a href="{{ $href }}" target="{{ $target }}" {{ $attributes->class(['btn btn-pill', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) }}>
     {{ $slot }}
 </a>
 @else
-<button type="submit" @class(['btn btn-pill', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) @if(!empty($arialabel)) {{ $attributes->merge(['aria-label' => $arialabel]) }} @endif>
+<button type="submit" {{ $attributes->class(['btn btn-pill', 'btn-'.$color => !empty($color), 'w-100' => $fullwidth, 'active' => $active, 'disabled' => $disabled, 'btn-icon' => $icononly]) }}>
     {{ $slot }}
 </button>
 @endif
