@@ -14,8 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title></title>
     <!-- CSS files -->
-    <link href="/css/tabler-flags.min.css?1692870487" rel="stylesheet"/>
-    <link href="/css/tabler-payments.min.css?1692870487" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.1.1/dist/css/tabler-flags.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.1.1/dist/css/tabler-payments.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.1.1/dist/css/tabler-socials.min.css" />
     <link href="/css/tabler-vendors.min.css?1692870487" rel="stylesheet"/>
     <link href="/css/demo.min.css?1692870487" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css">
