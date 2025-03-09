@@ -1,1 +1,1 @@
-<th @class([$attributes["class"]])>{{ $slot }}</th>
+<th {{ $attributes }}>{{ $slot }}</th>
