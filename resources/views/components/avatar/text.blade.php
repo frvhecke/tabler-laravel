@@ -1,1 +1,1 @@
-<span @class(["avatar", "me-2", $attributes["class"]])>{{ $slot }}</span>
+<span {{ $attributes->class([ "avatar", "me-2" ]) }}>{{ $slot }}</span>
