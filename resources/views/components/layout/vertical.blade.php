@@ -1,4 +1,7 @@
 <!doctype html>
+@props([
+  'navbar' => "",      // Content for actions slot
+])
 <!--
 * Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
 * @version 1.0.0-beta20
@@ -175,7 +178,13 @@
             </div>
           </div>
           <div class="collapse navbar-collapse" id="sidebar-menu">
+            <!-- BEGIN NAVBAR MENU -->
+            {{ $navbar }}
+            <!-- END NAVBAR MENU -->
+          </div>
+          <div class="collapse navbar-collapse" id="sidebar-menu">
             <ul class="navbar-nav pt-lg-3">
+              dddd
             </ul>
           </div>
         </div>
