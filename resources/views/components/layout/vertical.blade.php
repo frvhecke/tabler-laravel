@@ -182,11 +182,6 @@
             {{ $navbar }}
             <!-- END NAVBAR MENU -->
           </div>
-          <div class="collapse navbar-collapse" id="sidebar-menu">
-            <ul class="navbar-nav pt-lg-3">
-              dddd
-            </ul>
-          </div>
         </div>
       </aside>
       <div class="page-wrapper">
