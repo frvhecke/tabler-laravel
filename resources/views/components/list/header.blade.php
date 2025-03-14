@@ -1,0 +1,1 @@
+<div {{ $attributes->class(["list-group-header sticky-top"]) }}>{{ $slot }}</div>
