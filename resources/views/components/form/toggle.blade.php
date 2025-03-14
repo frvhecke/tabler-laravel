@@ -1,7 +1,7 @@
 @props([
-  'name',                 // Name for the input field
-  'text',                 // Text to display alongside the toggle switch
-  'description',          // Optional description to display underneath the text
+  'name' => ''            // Name for the input field
+  'text' => '',           // Text to display alongside the toggle switch
+  'description' => '',    // Optional description to display underneath the text
   'selected' => false,    // Flag indicating whether the toggle switch should be toggled on
   'disabled' => false,    // Flag indicating whether the toggle switch should be disabled
   'inline' => false       // Flag indicating whether the toggle switch should be displayed inline
