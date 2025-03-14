@@ -3,6 +3,7 @@
   'card' => true,           // Include table in card seamlessly
   'vcenter' => true,        // Vertically center the table rows
   'striped' => false,       // Striped rows
+  'header' => '',           // Slot for header
 ])
 <div {{ $attributes->class([ 'table-responsive' => $responsive ]) }} style="overflow: visible;">
   <table @class(['table', 'table-vcenter' => $vcenter, 'card-table' => $card, 'table-striped' => $striped])>
