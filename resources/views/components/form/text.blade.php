@@ -1,5 +1,4 @@
 @props([
-  'name',                   // Name for the text field
   'disabled' => false,      // Flag indicating whether field is disabled
   'readonly' => false,      // Flag indicating whether field is read-only
   'mask',                   // Mask for the text field
