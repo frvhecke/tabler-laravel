@@ -9,7 +9,7 @@
     @if(!empty(stripslashes($header)))
     <thead>
       <tr>
-        {{ $header }}
+        @if($header) {{ $header }} @endif
       </tr>
     </thead>
     @endif
