@@ -6,7 +6,7 @@
   'dismissible' => false, // Flag indicating whether alert is dismissible
   'important' => false    // Flag indicating whether alert is important (using color as background for alert box)
 ])
-<div role="alert" @class(['alert', 'alert-'.$color => !empty($color), 'alert-dismissible' => $dismissible, 'alert-important' => $important])>
+<div role="alert" {{ $attributes->class(['alert', 'alert-'.$color => !empty($color), 'alert-dismissible' => $dismissible, 'alert-important' => $important]) }}>
   @if(!empty($icon))
   <x-icon.tabler :icon="$icon" class="icon alert-icon" />
   @endif
