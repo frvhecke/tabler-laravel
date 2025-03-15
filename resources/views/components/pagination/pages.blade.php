@@ -54,7 +54,7 @@
   @endif
   @if($next)
   <li @class(["page-item", "disabled" => ($page==$total)])>
-    <a class="page-link" href="{{ url()->query($href, [$query_param => ($i>$total)?$i-1:$i]) }}">
+    <a class="page-link" href="{{ url()->query($href, [$query_param => ($page>$total)?$total:$page+1]) }}">
       @if($text) Next @endif <x-icon.tabler icon="chevron-right"/>
     </a>
   </li>
