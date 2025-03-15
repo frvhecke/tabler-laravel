@@ -9,9 +9,7 @@
 <div role="alert" @class(['alert', 'alert-'.$color => !empty($color), 'alert-dismissible' => $dismissible, 'alert-important' => $important])>
   <div class="d-flex">
     @if(!empty($icon))
-    <div>
-      <x-icon.tabler :icon="$icon" class="icon alert-icon" />
-    </div>
+    <x-icon.tabler :icon="$icon" class="icon alert-icon" />
     @endif
     @if(empty($description))
     <div>{{ $title }}</div>
