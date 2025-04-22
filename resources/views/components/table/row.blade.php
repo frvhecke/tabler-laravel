@@ -1,12 +1,12 @@
 @props([
   'href' => ''
 ])
-@if($href != "")
+@if(!empty($href))
 <a href="{{ $href }}">
 @endif
 <tr {{ $attributes }}>
   {{ $slot }}
 </tr>
-@if($href != "")
+@if(!empty($href))
 </a>
- @endif
+@endif
