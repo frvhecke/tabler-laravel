@@ -6,6 +6,6 @@
 ])
 <select @class(["form-select", "form-control-rounded" => $rounded]) @if(!empty($name)) name="{{ $name }}" @endif>
 @foreach($options as $key => $option)
-  <option value="{{ $key }}" {{ ($key == $default)?"selected":"" }}>{{ $option }}</option>
+  <option value="{{ $key }}" {{ ($key == $selected)?"selected":"" }}>{{ $option }}</option>
 @endforeach
 </select>
