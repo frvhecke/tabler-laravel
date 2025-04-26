@@ -1,7 +1,7 @@
 @props([
   'name',                 // Name for the input field
   'options' => [],        // List of options for the select field (value and text)
-  'selected',             // Selected value
+  'selected' => '',       // Selected value
   'rounded' => false,     // Flag indicating whether style is rounded
   'disabled' => false,    // Flag indicating whether field is disabled
   'readonly' => false,    // Flag indicating whether field is read-only
